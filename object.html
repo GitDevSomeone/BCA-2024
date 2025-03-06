@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let obj  ={
+        //     name : 'himanshu',
+        //     pnumnber: 9876543210,
+        //     present: true,
+        //     func: function(){
+        //         console.log("hello world")
+        //     },
+        //     userInfo: {
+        //         firstname: "himanshu",
+        //         lastname: "sharma",
+        //         hobbies: ["drawing", "coding", "Timepass"]
+        //     }
+        // }
+        // console.log(obj)
+
+
+
+        // let obj  = {
+        //     name : 'himanshu',
+        //     pnumnber: 9876543210,
+        //     present: true,
+        // }
+
+        // console.log(obj, "old")
+
+        // // obj.pnumnber = 8907654321
+        // // obj.section = "A"
+        // delete obj.present
+
+        // console.log(obj, "new")
+
+
+
+
+        // let obj  = {
+        //    "first Name" : "himanshu",
+        //    age: 123
+        // }
+
+        // // console.log(obj."first Name")
+        // console.log(obj["first Name"])
+        // console.log(obj["age"])
+
+
+
+        // let obj = {
+        //     name: "himanshu",
+        //     age: 20,
+        //     rolNo: 1234,
+        // }
+
+        // //forin
+        // for(let key in obj){
+        //     console.log(obj[key])
+        // }
+
+
+
+
+
+       let user = [
+        {name:"jhon Doe1", number: 12},
+        {name:"jhon Doe2", number: 34},
+        {name:"jhon Doe3", number: 89},
+        {name:"jhon Doe4", number: 56}
+       ]
+
+       let resultArr = []
+
+       for(let i = 0; i<user.length; i++){
+        let obj = user[i]
+        obj.number += 5;
+        resultArr.push(obj)
+       }
+
+       console.log(resultArr)
+       
+
+
+
+    </script>
+</body>
+
+</html>

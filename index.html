@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // console.log("hello world")
+        // console.log("hello this is first js")
+        // console.log(12 + 12)
+    //    var a =  prompt("enter your message")
+    //    console.log("message is", a)
+
+
+
+    // var abc = prompt("enter first number")
+    // abc = Number(abc)
+    // var def = prompt('enter second number')
+    // def = Number(def)
+    // console.log(abc + def)
+
+
+    fetch('https://88vt04z6-2000.inc1.devtunnels.ms/post',{
+        method: "POST",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify({text: "hello world"})
+    })
+
+    </script>
+</body>
+</html>
