@@ -1,19 +1,19 @@
 // fetching html element 
 
 // const heading = document.querySelector("h1"); 
-    //   first occurance of element that satisfies selector
+//   first occurance of element that satisfies selector
 
 // const heading = document.querySelectorAll("h1");
-    // all the occurances of element that satisfies the selector
-    
+// all the occurances of element that satisfies the selector
+
 // const heading = document.getElementById("3") 
-    // element with same id that we passed as an argument - single element
+// element with same id that we passed as an argument - single element
 
 // const heading = document.getElementsByClassName("bca");
-    // multiple element - array like structure
+// multiple element - array like structure
 
 // const heading = document.getElementsByTagName("h1")
-    // multiple element - array like structure
+// multiple element - array like structure
 
 
 // console.log(heading)
@@ -40,7 +40,7 @@
 
 // })
 
-const input = document.getElementById("inp");
+// const input = document.getElementById("inp");
 
 // input.addEventListener("keypress", function(){
 //     // console.log('event triggered')
@@ -57,6 +57,78 @@ const input = document.getElementById("inp");
 // })
 
 
-input.addEventListener("blur", function(){
-   console.log('focus triggered')
+// input.addEventListener("blur", function(){
+//    console.log('focus triggered')
+// })
+
+
+
+// const input = document.getElementById("inp");
+// const para = document.getElementById("real")
+
+// input.addEventListener('input', function(){
+//     para.innerText = input.value
+// })
+
+
+
+
+
+// task 10/03/2025
+
+
+
+
+// const input = document.getElementById('inp');
+// const button = document.getElementById('btn');
+// const box = document.getElementById('container')
+// const bod = document.querySelector('body')
+
+// button.addEventListener('click', function(){
+// creating dynamic element
+
+// const paragraph = document.createElement("p"); // element create
+
+// configure
+
+// paragraph.innerText = input.value
+// paragraph.setAttribute("class", "list")
+// paragraph.style.color = "red"
+
+
+// placing my elemnt into the dom tree
+
+//     box.appendChild(paragraph)
+// })
+
+
+
+
+
+// html file - create one button - 
+// on clicking on this button
+// using js - 100 divs create dynamically
+//           - style height - 100px ;
+//              - width - 100px  
+//         - append on body
+
+
+
+const input = document.getElementById('inp');
+const button = document.getElementById('btn');
+
+button.addEventListener('click', function () {
+    for (let i = 1; i <= 100; i++) {
+        const div = document.createElement('div')
+
+        div.style.height = '100px';
+        div.style.width = '100px';
+        div.style.backgroundColor = "red";
+        div.style.margin = "10px"
+
+        document.body.appendChild(div)
+    }
+
+
 })
+
