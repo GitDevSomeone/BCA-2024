@@ -26,6 +26,18 @@ addButton.addEventListener("click", function(){
     })
     taskList.appendChild(editButton)
 
+    const checkbox = document.createElement('input');
+    checkbox.setAttribute('type', 'checkbox');
+    checkbox.addEventListener("change", function(){
+        if(checkbox.checked == true){
+            span.style.textDecoration = "line-through"
+        }else{
+            span.style.textDecoration = "none"
+        }
+    })
+
+    taskList.appendChild(checkbox)
+
 
     listContainer.appendChild(taskList)
     inputField.value  = "";
