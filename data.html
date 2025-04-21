@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>getData</button>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>username</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+       const button = document.querySelector("button")
+
+       button.addEventListener("click", ()=>{
+        const tbody = document.querySelector("tbody")
+        fetch("https://feecq.github.io/api/users.json")
+        .then((data)=>data.json())
+        .then((parsedData)=>{
+            parsedData.forEach((value)=>{
+                const tr = document.createElement('tr')
+                const td1 = document.createElement('td')
+                const td2 = document.createElement('td')
+                const td3 = document.createElement('td')
+
+                td1.innerText = value.name
+                td2.innerText = value.username
+                td3.innerHTML = value.email
+
+                tr.appendChild(td1)
+                tr.appendChild(td2)
+                tr.appendChild(td3)
+
+                tbody.appendChild(tr)
+
+            })
+        })
+       })
+    </script>
+</body>
+</html>
